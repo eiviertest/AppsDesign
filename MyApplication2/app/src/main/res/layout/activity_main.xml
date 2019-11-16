@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del solicitante"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNombre"
+        android:hint="Ingrese su nombre"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edad del solicitante"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEdad"
+        android:hint="Ingrese su edad"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Promedio del solicitante"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPromedio"
+        android:hint="Ingrese su promedio"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingreso mensual del solicitante"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtIngreso"
+        android:hint="Ingrese su ingreso mensual"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hermanos del solicitante"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHermanos"
+        android:hint="Ingrese la cantidad de hermanos"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Folio de secundaria"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/rbtgFolio"
+        android:layout_width="match_parent"
+        android:layout_height="90dp" >
+
+        <RadioButton
+            android:id="@+id/rbtnFolioA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABC1" />
+
+        <RadioButton
+            android:id="@+id/rbtnFolioB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABC2" />
+
+        <RadioButton
+            android:id="@+id/rbtnFolioC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABC3" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnVerificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1EEB4F"
+        android:text="Calcular"
+        android:textColor="#FFFFFF"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/txvMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mensaje: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>

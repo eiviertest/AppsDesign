@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Solicitud de Beca"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="15pt"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datos del solicitante"
+        android:textSize="12pt"
+        android:fontFamily="sans-serif" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:inputType="textShortMessage"
+        android:id="@+id/etxNombre"/>
+
+    <EditText
+        android:id="@+id/etxpromedio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Promedio (0-100)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etxEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edad (16-45)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etxIngreso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingreso mensual ($0.00-$10,000)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etxHermanos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hermanos (0-15)"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Folio de preparatoria"
+        android:textSize="12pt"
+        android:fontFamily="sans-serif"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgbtnFolio">
+
+        <RadioButton
+            android:id="@+id/rbtnFolio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="ABC1" />
+
+        <RadioButton
+            android:id="@+id/rbtnFolio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABC2" />
+
+        <RadioButton
+            android:id="@+id/rbtnFolio3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABC3" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnVerificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verificar"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Mensaje: "
+        android:textSize="12pt"
+        android:id="@+id/txtMensaje"/>
+
+</LinearLayout>
